@@ -1,0 +1,64 @@
+
+:root{
+    --bell: #ff8f00;
+    --sidebar: #051e34;
+    --jumbotron: #1b72e8;
+    --ticket: #165bba;
+}
+
+/* header */
+
+header{
+    height: 80px;
+}
+
+header .logo-mobile{
+    height: 50px;
+}
+
+header .input-group > *{
+    background-color: lightgray;
+}
+
+header .input-group input{
+    font-weight: 500;
+}
+
+header i.fa-bell{
+    color: var(--bell);
+}
+
+/* sidebar */
+
+#sidebar{
+    background-color: var(--sidebar);
+    background-image: url(../img/sidebar-bg.png);
+    height: calc(100vh - 80px);
+    width: 70px;
+}
+
+/* main */
+
+main{
+    width: calc(100vw - 70px);
+    height: calc(100vh - 80px);
+}
+
+    /* ? jumbo */
+
+#jumbotron{
+    background-color: var(--jumbotron);
+}
+
+/* utils */
+
+.ticket{
+    background-color: var(--ticket);
+    border-radius: 20px;
+    padding: 4px 10px 5px 10px;
+    font-size: 0.7rem;
+}
+
+.ticket .fa-plus{
+    font-size: 14px;
+}

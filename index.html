@@ -7,18 +7,97 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'/>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Boolean Dashboard</title>
 </head>
 <body>
     <header>
-        <div class="navbar">
-        </div>
+        <nav class="navbar h-100 navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="d-lg-none logo-mobile" src="img/mobile-logo.png" alt="Boolean mobile logo">
+                    <img class="d-none d-lg-block" src="img/logo.svg" alt="Boolean logo full">
+                </a>
+                <form class="flex-grow-1" role="search">
+                    <div class="input-group">
+                        <span class="input-group-text border-end-0 pe-2 ps-2">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input class="form-control border-start-0" type="search" placeholder="Prova a cercare: lezioni di Laravel" aria-label="Search">
+                    </div>
+                </form>
+                <button class="navbar-toggler border-0" type="button">
+                    <i class="fa-solid fa-bell"></i>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="fa-solid fa-list"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-bell"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
     </header>
-    <div>
+    <div class="box d-flex">
+        <div id="sidebar" class="d-flex flex-column justify-content-between align-items-center py-4 text-white">
+            <div class="sidebar-item overflow-auto">
+                <i class="fa-solid fa-house mb-3"></i>
+                <span class="d-none d-lg-inline-block ms-2">Home</span>
+                <br>
+                <i class="fa-solid fa-house mb-3"></i>
+                <span class="d-none d-lg-inline-block ms-2">Stats</span>
+                <br>
+                <i class="fa-solid fa-house mb-3"></i>
+                <span class="d-none d-lg-inline-block ms-2">Signals</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fa-solid fa-house"></i>
+                <span class="d-none d-lg-inline-block ms-2">Admin</span>
+            </div>
+        </div>
+        <main class="overflow-auto">
+            <section id="jumbotron" class="p-4 text-white">
+                <div class="row">
+                    <div class="col-12 col-md-4 p-1 order-md-1">
+                        Nuovo Studente
+                        <button class="btn border text-white ms-3"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div class="col-12 col-md-4 p-1">
+                        <h1 class="d-inline me-2">Boolean</h1><span class="ticket align-middle">Piano Blaze</span>
+                        <div class="mt-2">
+                            <span class="ticket">3 app</span>
+                            <i class="fa-solid fa-angles-right"></i>
+                            <span class="ticket"><i class="fa-solid fa-plus"></i></span>
+                            <span class="ticket d-none d-lg-inline-block">Boolean mobile app</span>
+                            <span class="ticket d-none d-lg-inline-block">Boolean web app</span>
+                            <span class="ticket d-none d-lg-inline-block">Boolean blog app</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 p-1">
+                        Studenti online neglio ultimi 30 minuti
+                        <div class="fs-1">
+                            125
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="main-content">
 
+            </section>
+        </main>
     </div>
-    <main>
-
-    </main>
 </body>
 </html>
