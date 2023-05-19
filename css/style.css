@@ -50,6 +50,21 @@ main{
     background-color: var(--jumbotron);
 }
 
+    /* ? main-content */
+
+#main-content tbody hr{
+    margin-left: 10px;
+}
+
+#main-content table .table-img{
+    height: 30px;
+    border-radius: 50%;
+}
+
+#main-content table th, #main-content table td{
+    text-align: center;
+}
+
 /* utils */
 
 .ticket{
@@ -61,4 +76,8 @@ main{
 
 .ticket .fa-plus{
     font-size: 14px;
+}
+
+.col-text{
+    padding: 0px 10px;
 }
