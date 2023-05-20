@@ -58,6 +58,11 @@ main{
     margin-left: 10px;
 }
 
+#classes tbody i{
+    cursor: pointer;
+    margin-left: 10px;
+}
+
 #classes table .table-img{
     height: 30px;
     border-radius: 50%;
