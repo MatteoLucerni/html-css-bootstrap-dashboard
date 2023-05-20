@@ -50,19 +50,28 @@ main{
     background-color: var(--jumbotron);
 }
 
-    /* ? main-content */
+/* main-content */
 
-#main-content tbody hr{
+    /* ? section classes */
+
+#classes tbody hr{
     margin-left: 10px;
 }
 
-#main-content table .table-img{
+#classes table .table-img{
     height: 30px;
     border-radius: 50%;
 }
 
-#main-content table th, #main-content table td{
+#classes table th, #classes table td{
     text-align: center;
+}
+
+    /* ? section stats */
+
+#stats .col-main .stats-hr{
+    color: gray;
+    margin: 7px 0;
 }
 
 /* utils */
@@ -81,3 +90,4 @@ main{
 .col-text{
     padding: 0px 10px;
 }
+
