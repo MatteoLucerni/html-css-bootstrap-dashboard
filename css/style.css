@@ -28,6 +28,12 @@ header i.fa-bell{
     color: var(--bell);
 }
 
+/* offcanvas */
+
+.offcanvas.offcanvas-end{
+    width: 100%;
+}
+
 /* sidebar */
 
 #sidebar{

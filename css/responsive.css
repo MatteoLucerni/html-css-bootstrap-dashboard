@@ -2,4 +2,8 @@
     #sidebar{
         width: 150px;
     }
+
+    .offcanvas.offcanvas-end{
+        width: 40%;
+    }
 }
