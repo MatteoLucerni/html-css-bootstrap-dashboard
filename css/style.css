@@ -79,6 +79,12 @@ main{
     margin: 7px 0;
 }
 
+    /* ? section FAQ */
+
+#FAQ #FAQ-accordion .accordion-header{
+    background-color: transparent;
+}
+
 /* utils */
 
 .ticket{
