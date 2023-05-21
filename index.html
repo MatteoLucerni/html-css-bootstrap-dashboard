@@ -69,6 +69,26 @@
             </div>
           </nav>
     </header>
+    <!-- offcanvas mobile/tablet -->
+    <div class="offcanvas offcanvas-top d-lg-none" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            Ciao 2
+        </div>
+    </div>
+    <!-- offcanvas lg+ -->
+    <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            Ciao
+        </div>
+    </div>
     <div class="box d-flex">
         <div id="sidebar" class="d-flex flex-column justify-content-between align-items-center py-4 pe-lg-3 text-white">
             <div class="sidebar-item w-75">
@@ -97,7 +117,14 @@
                 <div class="row">
                     <div class="col-12 col-md-4 p-1 order-md-1">
                         Nuovo Studente
-                        <button class="btn border text-white ms-3"><i class="fa-solid fa-plus"></i></button>
+                        <!-- offcanvas mobile/tablet button activator -->
+                        <button class="btn text-white border ms-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <!-- offcanvas lg+ button activator -->
+                        <button class="btn text-white border ms-3 d-none d-lg-inline-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
                     </div>
                     <div class="col-12 col-md-4 p-1">
                         <h1 class="d-inline me-2">Boolean</h1><span class="ticket align-middle">Piano Blaze</span>
