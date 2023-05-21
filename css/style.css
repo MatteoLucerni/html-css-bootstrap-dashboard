@@ -34,6 +34,14 @@ header i.fa-bell{
     width: 100%;
 }
 
+.offcanvas form label{
+    font-weight: 500;
+}
+
+.offcanvas form button{
+    font-weight: 600;
+}
+
 /* sidebar */
 
 #sidebar{

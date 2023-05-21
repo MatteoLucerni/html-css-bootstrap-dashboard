@@ -70,28 +70,82 @@
           </nav>
     </header>
     <!-- offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas offcanvas-end show" tabindex="-1" id="offcanvasEnd" aria-labelledby="offcanvasEndLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+            <h5 class="offcanvas-title" id="offcanvasEndLabel">Inserisci un nuovo studente</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <form action="" method="post">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="surname" class="form-label">Cognome</label>
+                            <input type="text" class="form-control" id="surname" name="surname">
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="passoword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                        <div class="col-12 col-md-6 mb-3 d-none d-md-block">
+                            <label for="email" class="form-label">Email 2</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon2">@</span>
+                                <input type="email" class="form-control" id="email-2" name="email-2">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3 d-none d-md-block">
+                            <label for="passoword" class="form-label">Password 2</label>
+                            <input type="password" class="form-control" id="password-2" name="password-2">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="address" class="form-label">Indirizzo</label>
+                            <input type="text" class="form-control" id="address" name="address">
+                        </div>
+                        <div class="col-12 col-md-7 mb-3">
+                            <label for="city" class="form-label">Città</label>
+                            <input type="text" class="form-control" id="city" name="city">
+                        </div>
+                        <div class="col-12 col-md-3 mb-3">
+                            <label for="state" class="form-label">Stato</label>
+                            <select name="state" id="state" class="form-select">
+                                <option selected>Scegli...</option>
+                                <option value="italy">Italia</option>
+                                <option value="germany">Germania</option>
+                                <option value="swiss">Svizzera</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-2 mb-3">
+                            <label for="cap" class="form-label">CAP</label>
+                            <input type="number" class="form-control" id="cap" name="cap">
+                        </div>
+
+                        <div class="col-12 mb-5">
+                            <label for="photo" class="form-label">Foto</label>
+                            <input type="file" class="form-control" id="photo" name="photo">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <input type="checkbox" class="form-check-input" id="selectHere" required>
+                            <label class="form-check-label" for="selectHere">Seleziona per proseguire</label>
+                        </div>
+                        <div class="col-12 form-buttons">
+                            <button type="submit" class="btn btn-primary">Salva</button>
+                            <button type="reset" class="btn btn-primary bg-warning border-warning text-dark">Svuota</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+            </form>
         </div>
     </div>
     <div class="box d-flex">
@@ -122,8 +176,8 @@
                 <div class="row">
                     <div class="col-12 col-md-4 p-1 order-md-1">
                         Nuovo Studente
-                        <!-- offcanvas mobile/tablet button activator -->
-                        <button class="btn text-white border ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                        <!-- offcanvas button activator -->
+                        <button class="btn text-white border ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEnd" aria-controls="offcanvasEnd">
                             <i class="fa-solid fa-plus"></i>
                         </button>
                     </div>
