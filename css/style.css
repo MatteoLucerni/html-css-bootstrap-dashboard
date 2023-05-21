@@ -51,6 +51,14 @@ header i.fa-bell{
     width: 70px;
 }
 
+#sidebar > .sidebar-item > *{
+    transition: background-color .2s;
+}
+
+#sidebar > .sidebar-item > *:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
 /* main */
 
 main{
