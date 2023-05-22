@@ -119,12 +119,13 @@
                         </div>
                         <div class="col-12 col-md-3 mb-3">
                             <label for="state" class="form-label">Stato</label>
-                            <select name="state" id="state" class="form-select">
+                            <input type="text" class="form-control" id="state" name="state" list="list-states">
+                            <datalist id="list-states">
                                 <option selected>Scegli...</option>
-                                <option value="italy">Italia</option>
-                                <option value="germany">Germania</option>
-                                <option value="swiss">Svizzera</option>
-                            </select>
+                                <option value="Italia">IT</option>
+                                <option value="Germania">DE</option>
+                                <option value="Svizzera">CH</option>
+                            </datalist>
                         </div>
                         <div class="col-12 col-md-2 mb-3">
                             <label for="cap" class="form-label">CAP</label>
