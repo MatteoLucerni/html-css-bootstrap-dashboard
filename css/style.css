@@ -94,6 +94,10 @@ main{
     text-align: center;
 }
 
+#classes table td .fa-pen:hover, #classes table td .fa-trash:hover{
+    background-color: lightgray;
+}
+
     /* ? section stats */
 
 #stats .col-main .stats-hr{
